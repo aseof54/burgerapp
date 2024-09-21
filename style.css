@@ -64,6 +64,7 @@ header ul li a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 146px;
 }
 
 .hero-left{
@@ -71,7 +72,7 @@ header ul li a{
 }
 
 .hero-left h1{
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 400;
 }
 
@@ -80,4 +81,154 @@ header ul li a{
     font-weight: 200;
     color: #1F2939;
 
+}
+
+.burger{
+    margin-bottom: 68px;
+}
+
+.burger-left h1{
+    font-size: 68px;
+    font-weight: 400;
+}
+
+.burger-top{
+    display: flex;
+    align-items: center;
+}
+
+.burger-prop{
+    align-items: center;
+    display: flex;
+    background-color: #f5f5ff;
+    border-radius: 50px;
+    padding: 12px 16px;
+    gap: 8px;
+}
+
+.burger-properties{
+    display: flex;
+    gap: 12px;
+    margin-bottom: 68px;
+}
+
+.burger-right h4{
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+.gift-red{
+    color: #FF4D4F;
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.gift-text{
+    font-size: 24px;
+    margin-left: 24px;
+    margin-bottom: 28px;
+}
+
+.text-gray{
+    color: #949BA6;
+}
+
+.burger-center{
+    position: relative;
+}
+
+.ketchup-g{
+    float: right;
+}
+
+.burger-price{
+    color: white;
+    font-size: 36px;
+    font-style: italic;
+    background-color: #5243C2;
+    padding: 12px 24px;
+    font-weight: 800;
+    border-radius: 50px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+}
+
+.burger-bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-order{
+    font-size: 36px;
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background-color: #BE2B20;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-middle{
+    justify-content: center;
+    display: flex;
+}
+
+.burger-card{
+    width: 140px;
+    height: 180px;
+    border-radius: 20px;
+    border: 1px solid #8d8d8d;
+    padding: 24px 18px;
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.card-image img{
+    width: 90%;
+}
+
+.burger-card h5{
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.card-controls button{
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    background-color: #d7d7e4;
+    border: none;
+    font-size: 18px;
+    color: #949BA6;
+    cursor: pointer;
+}
+
+.card-controls button:hover{
+    background-color: #bebebe;
+}
+
+.card-controls button:active{
+    background-color: rgb(146, 146, 146);
+    color: #ffffff;
+}
+
+.card-controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-cards{
+    display: flex;
+    gap: 32px;
 }
