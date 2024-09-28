@@ -18,8 +18,27 @@
             </nav>
         </div>
         <div class="header-right">
-            <button>Call me back</button>
+            <button class="callButton">Call me back</button>
             <p>+380660801772</p>
+        </div>
+        <button class="burger-menu" id="burgerMenu">
+            <img src="./icons/Menu.svg" alt="">
+        </button>
+        <div class="dropdown-menu dropdown-hidden">
+            <div class="drop-bar">
+                <img src="buger.png" alt="" height="80px" width="80px">
+                <button class="cross-button" id="crossButton"><img src="./icons/icon.svg" alt="cross" class="cross"></button>
+            </div>
+            <div class="header-right">
+                <button class="callButton">Call me back</button>
+                <p>+380660801772</p>
+            </div>
+            <nav class="nav-drop">
+                <ul>
+                    <li class="active"><a href="./index.html">Discover</a></li>
+                    <li><a href="./burger.html">Make your burger</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -32,67 +51,7 @@
                     Parallax screen. Burger ingredients and emojis moving depending on the position of the mouse pointer.
                 </p>
                 
-            </div><img src="Group 51.svg" alt="burger">
-        </section>
-        <section class="burger container">
-            <div class="burger-top">
-                <div class="burger-left">
-                    <h1>
-                        Make <br> Your Burger
-                    </h1>
-                </div>
-                <div class="burger-center">
-                    <img width="630" height="619" src="Group 37.png" alt="sili buger">
-                    <span class="burger-price">$6.13</span>
-                </div>
-                <div class="burger-right">
-                    <h4>Summary</h4>
-                    <div class="burger-properties">
-                        <div class="burger-prop">
-                            <img src="icons/calories.svg" alt="">
-                            249 kcal
-                        </div>
-                        <div class="burger-prop">
-                            <img src="icons/time.svg" alt="">
-                            5 min
-                        </div>
-                        <div class="burger-prop">
-                            <img src="icons/weight.svg" alt="">
-                            800 g
-                        </div>
-                    </div>
-                    <div class="burger-gift">
-                        <span class="gift-red"> + GIFT</span>
-                        <p class="gift-text">Tomato Ketchup <span class="text-gray">0.2 oz</span></p>
-                        <img class="ketchup-g" src="Ketchup_gift.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="burger-middle">
-                <button class="burger-order">Order</button>
-            </div>
-            <div class="burger-bottom">
-                <div class="burger-cards">
-                    <div class="burger-card">
-                        <div class="card-image"><img src="burger-ingridients/Cutlet.svg" alt=""></div>
-                        <h5>Cutlet</h5>
-                        <div class="card-controls">
-                            <button>-</button>
-                            6
-                            <button>+</button>
-                        </div>
-                    </div>
-                    <div class="burger-card">
-                        <div class="card-image"><img src="burger-ingridients/Cheese.svg" alt=""></div>
-                        <h5>Cheese</h5>
-                        <div class="card-controls">
-                            <button>-</button>
-                            6
-                            <button>+</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div><img src="Group 51.svg" alt="burger" class="bugerIMG">
         </section>
     </main>
 

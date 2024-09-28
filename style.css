@@ -65,6 +65,8 @@ header ul li a{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 146px;
+    flex-wrap: wrap;
+    padding: 0 24px;
 }
 
 .hero-left{
@@ -231,4 +233,86 @@ header ul li a{
 .burger-cards{
     display: flex;
     gap: 32px;
+}
+
+header .burger-menu{
+    display: none;
+    height: fit-content;
+    border: none;
+    background-color: unset;
+}
+
+.dropdown-menu{
+    transition: height 0.5s ease-in;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 32px 24px 0;
+    overflow: hidden;
+}
+
+.dropdown-menu .drop-bar{
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.dropdown-menu .header-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-menu .nav-drop ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 224px;
+    font-size: 24px;
+    line-height: 22px;
+    gap: 72px;
+
+}
+
+.dropdown-menu .nav-drop ul li{
+    width: fit-content;
+    font-size: 24px;
+}
+
+.dropdown-menu .drop-bar .cross-button{
+    height: fit-content;
+    border: none;
+    background-color: unset;
+}
+.hidden{
+    display: none;
+}
+.bugerIMG{
+    max-width: 800px;
+    min-width: 364px;
+}
+
+@media (max-width: 768px) {
+    header .burger-menu{
+        display: block;
+    }
+    .header-left nav, .header-right{
+        display: none;
+    }
+    header {
+        padding: 0px, 24px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .hero .bugerIMG{
+        max-width: 364px;
+    }
+}
+
+.dropdown-hidden{
+    height: 0;
 }
