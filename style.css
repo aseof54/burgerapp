@@ -99,7 +99,7 @@ header ul li a{
     align-items: center;
 }
 
-.burger-prop{
+ul.burger-properties li{
     align-items: center;
     display: flex;
     background-color: #f5f5ff;
@@ -108,7 +108,7 @@ header ul li a{
     gap: 8px;
 }
 
-.burger-properties{
+.burger-properties    {
     display: flex;
     gap: 12px;
     margin-bottom: 68px;
@@ -125,7 +125,7 @@ header ul li a{
     font-weight: 800;
 }
 
-.gift-text{
+.burgergift-pc .gift-text{
     font-size: 24px;
     margin-left: 24px;
     margin-bottom: 28px;
@@ -243,7 +243,7 @@ header .burger-menu{
 }
 
 .dropdown-menu{
-    transition: height 0.5s ease-in;
+    transition: height 0.4s ease-in;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -315,4 +315,83 @@ header .burger-menu{
 
 .dropdown-hidden{
     height: 0;
+    padding: 0;
+}
+
+.burger-gift .burgergift-mobile{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .burger-top h1 {
+        display: none;
+    }
+    .burger-top {
+        flex-direction: column;
+    }
+    .burger-top .burger-right h4{
+        display: none;
+    }
+
+    .burger-top .burger-right .burger-properties{
+        margin-bottom: 16px;
+    }
+
+    .burger-top .burger-right .burger-properties{
+        min-width: 117px;
+        height: 48px;
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    .burger-gift .burgergift-mobile{
+        display: block;
+    }
+    .burgergift-mobile .mobile-gift{
+        background-color: #ffeded;
+        border-radius: 20px;
+        padding: 12px 49px;
+        min-width: 328px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: center;
+    }
+    .burgergift-mobile .mobile-gift .red-gift{
+        color: #FF4D4F;
+        font-size: 16px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .burgergift-mobile .mobile-gift .gift-text{
+        font-size: 16px;
+        color: #1F2939;
+    }
+    .burgergift-mobile .mobile-gift .weight-block{
+        font-size: 12px;
+        color: white;
+        border-radius: 19px;
+        padding: 6px 0;
+        width: 47px;
+        height: 26px;
+        background-color: #FF4D4F;
+        text-align: center;
+    }
+    .burgergift-pc{
+        display: none;
+    }
+    .burger-center{
+        width: 100vw;
+    }
+    .burger-center img{
+        width: 100%;
+        height: 100%;
+    }
+    .burger-price{
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: max-content;
+        height: 67px;
+        top: 75%;
+    }
 }
